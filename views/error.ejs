@@ -1,3 +1,48 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.notFound{
+    height: 100vh;
+    background: #d1d1d1;
+}
+.ttl{
+  height: 30vh;
+}
+.pre{
+    height:70vh;
+}
+hr{
+    width: 75%;
+    border-bottom: 1px solid #1d1d1d;
+    margin-bottom: 1rem;
+}
+</style>
+
+<section class="notFound">
+    <div class="ttl flex">
+        <a href="/"><strong>Home</strong></a>
+        <h1><%= message %></h1>
+        <hr>
+        <h2><%= error.status %></h2>
+    </div>
+    <div class="pre flex">
+        <pre><%= error.stack %></pre>
+    </div>
+</section>

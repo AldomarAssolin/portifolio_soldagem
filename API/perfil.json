@@ -6,6 +6,9 @@
         "banners": [],
         "name": "",
         "firstname": "",
-        "date_birth": "27/02/1984"
+        "date_birth": "27/02/1984",
+        "short_description": "",
+        "long_description": "",
+        "occupation": ""
     }
 ]
