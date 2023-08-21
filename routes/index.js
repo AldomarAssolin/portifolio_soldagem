@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const { obterDadosDaChamada, obterDadosPorId } = require('../DB/db'); // Importa a função
+
 const config = require('../API/experiences')
 const DadosManager = require('../utilities/utilities')
 

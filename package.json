@@ -1,7 +1,7 @@
 {
-  "name": "exemplo-express",
-  "version": "0.0.0",
-  "private": true,
+  "name": "portifolio_soldagem",
+  "version": "1.0.0",
+  "private": false,
   "scripts": {
     "start": "nodemon ./bin/www"
   },
