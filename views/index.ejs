@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  </head>
+  <body>
+    <a class="nav-link <%= activePage === 'about' ? 'active' : '' %>" href="/about">Sobre mim</a>
+    <header>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link <%= body === 'home' ? 'active' : '' %>" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item <%= body === 'home' ? 'active' : '' %>" href="/">Home</a></li>
+            <li><a class="dropdown-item <%= body === 'experiences' ? 'active' : '' %>" href="/experiences">Experiências</a></li>
+            <li><a class="dropdown-item <%= body === 'home' ? 'active' : '' %>" href="/">Cursos</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Github</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </header>
+   
+    <main>
+
+      <!--HOME-->
+      <h1>HOME</h1>
+      
+      <% dados.forEach(item => { %>
+        <div class="card mb-3" style="max-width: 340px;">
+          <div class="row g-0">
+            
+            <div class="col-md-12">
+              <div class="card-body">
+                <h3 class="card-title"><%= item.name %></h3>
+                <h5 class="card-title"><%= item.occupation %></h5>
+                <p class="card-text"><%= item.description %></p>
+                <p class="card-text"><small class="text-muted">Início: <%= item.dateIn %></small></p>
+                <p class="card-text"><small class="text-muted">Saída: <%= item.dateOut %></small></p>
+              </div>
+            </div>
+          </div>
+          <a href="/projetos">Ver Todos</a>
+          <a href="/details/<%= item.name %>">Ver detalhes</a>
+        </div>
+          
+      <% }); %>
+
+       <!--HOME-->
+
+       <!--EXPERIENCES-->
+
+       <% dados.forEach(item => { %>
+        <div class="card mb-3" style="max-width: 340px;">
+          <div class="row g-0">
+            
+            <div class="col-md-12">
+              <div class="card-body">
+                <h3 class="card-title"><%= item.name %></h3>
+                <h5 class="card-title"><%= item.occupation %></h5>
+                <p class="card-text"><%= item.description %></p>
+                <p class="card-text"><small class="text-muted">Início: <%= item.dateIn %></small></p>
+                <p class="card-text"><small class="text-muted">Saída: <%= item.dateOut %></small></p>
+              </div>
+            </div>
+          </div>
+          <a href="/projetos">Ver Todos</a>
+          <a href="/details/<%= item.name %>">Ver detalhes</a>
+        </div>
+          
+      <% }); %>
+
+      <!--EXPERIENCES-->
+
+      <!--DATAILS-->
+      <div class="card mb-3">
+        
+        <div class="card-body">
+          <h5 class="card-title"><%= elemento.name %></h5>
+          <p class="card-text"><%= elemento.occupation %></p>
+          <p class="card-text"><%= elemento.description %></p>
+          <p class="card-text"><%= elemento.dateIn %></p>
+          <p class="card-text"><%= elemento.dateOut %></p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+        <!--DATAILS-->
+      </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

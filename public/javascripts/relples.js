@@ -1,0 +1,1 @@
+import {navbar_icon} from 'bootstrap-icons'

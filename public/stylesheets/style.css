@@ -1,0 +1,31 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+h1{
+  color: #fff !important;
+}
+
+h2{
+  color: #d1d1d1;
+}
+
+h3, h4,h5,h6{
+  color: #4e4e4e;
+}
+
+pre, span{
+  color: #4e4e4e;
+}
+
+p{
+  color: #d1d1d1;
+}
+
+/* classes */
+.experiences.card{
+  min-height: 850px !important;
+}

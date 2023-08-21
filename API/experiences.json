@@ -1,0 +1,67 @@
+ [
+    {
+        "_id":"63419452c14a718fe102ab35",
+        "name":"Cofelma Metalúrgica",
+        "occupation":"Soldador",
+        "description":"Soldador de roscas transportadoras",
+        "dateIn":"1668999600000",
+        "dateOut":"1781233200000",
+        "Image": "companies/thor-logo.jpeg"
+    },
+    {
+        "_id":"634195aa140b897692f1ff9d",
+        "name":"Burguer House | A casa do XIS",
+        "occupation":"Entregador",
+        "description":"Entregador Fast Food",
+        "dateIn":"1668999600000",
+        "dateOut":"1781233200000",
+        "Image": "logos/LogoTransp.png"
+    },
+    {
+        "_id":
+        "6342c99fafd0dfccf2be5244",
+        "name":"ALDOMAR ASSOLIN DA SILVA",
+        "occupation":"Técnico em Soldagem",
+        "description":"about section box",
+        "dateIn":"1286668800000",
+        "dateOut":"1320969600000",
+        "Image": "logos/LogoTransp.png"
+    },
+    {
+        "_id":"6342ca34afd0dfccf2be5247",
+        "name":"Thor Máquinas e Montagens",
+        "occupation":"Soldador",
+        "description":"Soldador de máquinas e equipamentos para graxarias.",
+        "dateIn":"1336608000000",
+        "dateOut":"1360281600000",
+        "Image": "companies/thor-logo.jpeg"
+    },
+    {
+        "_id":"6342ca92afd0dfccf2be524a",
+        "name":"Agrimec Agro Indústria",
+        "occupation":"Soldador",
+        "description":"Soldador de implementos agríciolas, operador de soldagem, montador.",
+        "dateIn":"1602288000000",
+        "dateOut":"1605052800000",
+        "Image": "companies/logoAgrimec.jpg"
+    },
+    {
+        "_id":"6342cb1cafd0dfccf2be524e",
+        "name":"CLW Estruturas",
+        "occupation":"Soldador",
+        "description":"Soldador de estruturas metálicas de grande porte",
+        "dateIn":"1444435200000",
+        "dateOut":"1447977600000",
+        "Image": "companies/clw-logo.jpeg"
+    },
+    {
+        "_id":"6342cb1cafd0dfccf2be524e",
+        "name":"CLW Estruturas",
+        "occupation":"Soldador",
+        "description":"Soldador de estruturas metálicas de grande porte",
+        "dateIn":"1444435200000",
+        "dateOut":"1447977600000",
+        "Image": "companies/clw-logo.jpeg"
+    }
+ ]
+ 
