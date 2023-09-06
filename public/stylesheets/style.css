@@ -4,44 +4,74 @@
   box-sizing: border-box;
 }
 
-h1{
-  color: #fff !important;
+:root{
+  --clr-title: #fd7e14;
+  --clr-title_section: #fd5614;
+  --clr-subtitle: #f7a25d;
+  --clr-subtitle_section: #db683a;
+  --clr-text: #ddd;
+  --clr-text_card: #fafafa;
+  --bg-clr-primary: #383B3F;
+  --bg-clr-secondary: #e0eaf7;
+  --bg-clr: #fff;
+  --br-dark: #131520;
 }
 
-h2{
-  color: #d1d1d1;
+/* THEME */
+
+html[data-theme='light']{
+  --bg-clr: #fff;
+  --clr-title_section: #fd5614;
+  --clr-text: #383737;
 }
 
-h3, h4,h5,h6{
-  color: #4e4e4e;
-}
-
-pre, span{
-  color: #4e4e4e;
-}
-
-p{
-  color: #d1d1d1;
+html[data-theme='dark']{
+  --bg-clr: #131520;
+  --clr-title_section: #fd5614;
+  --clr-text: #e0eaf7;
 }
 
 
 /* classes */
-.clr_orange{
-  color: #fd7e14;
+.clr-title{
+  color: var(--clr-title);
 }
 
-.clr_orange-200{
-  color: #f7a25d;
+.clr-title_section{
+  color: var(--clr-title_section);
+}
+
+.clr-subtitle{
+  color: var(--clr-subtitle);
+}
+
+.clr-subtitle_section{
+  color: var(--clr-subtitle_section);
+}
+
+.clr-text{
+  color: var(--clr-text)
+}
+
+.clr-text_card{
+  color: var(--clr-text_card)
 }
 
 .experiences.card{
   min-height: 850px !important;
 }
 
+/* STYLES */
+
+body{
+  background-color: var(--bg-clr) !important;
+  color: var(--clr-text) !important;
+}
+
 #banner{
   width: auto;
   height: 80vh;
-  background: url('../images/banners/Background.png') no-repeat center;
+  background: url('../images/logos/Planet_Arcadia.png') no-repeat center;
   background-size: 100% 100%;
 }
 
